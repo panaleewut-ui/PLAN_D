@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     proteinNeed <= n.proteinMax
   );
 
-// ถ้ามีข้อมูล nutritionData ให้ใช้แทนข้อมูลใน matchPlan
+  // ถ้ามีข้อมูล nutritionData ให้ใช้แทนข้อมูลใน matchPlan
   if (matchNutrition) {
     matchPlan.kcalActual = matchNutrition.kcalActual;
     matchPlan.proteinActual = matchNutrition.proteinActual;
@@ -60,9 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     matchPlan.fatPercent = matchNutrition.fatPercent;
   }
 
-
   if (!matchPlan) {
-    // ไม่มีข้อมูล
     foodTableContainer.innerHTML = `
       <p style="text-align:center;color:#666;padding:1rem;">
         ❗ ระบบยังไม่มีฐานข้อมูลนี้ โปรดติดตามในอนาคต
@@ -71,76 +69,90 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // แสดง caloric distribution จากแผน (ตรงข้อนี้ data.js มี carbPercent/proteinPercent/fatPercent)
+  // แสดง caloric distribution
   distBoxes.innerHTML = `
     <div class="dist-box">คาร์โบไฮเดรต<br><strong>${matchPlan.carbPercent}%</strong></div>
     <div class="dist-box">โปรตีน<br><strong>${matchPlan.proteinPercent}%</strong></div>
     <div class="dist-box">ไขมัน<br><strong>${matchPlan.fatPercent}%</strong></div>
   `;
 
-  // ข้อความตัวอย่างสัดส่วน (ดึงจาก matchPlan.kcalActual / proteinActual)
+  // ข้อความตัวอย่างสัดส่วน
   exampleText.textContent = `ตัวอย่างสัดส่วนอาหารที่ให้พลังงาน ${matchPlan.kcalActual} kcal และโปรตีน ${matchPlan.proteinActual} g`;
 
-  // ฟังก์ชันช่วย: ลบรายการ total = 0
-  function normalizePortions(portions){
+  // ฟังก์ชันช่วย
+  function normalizePortions(portions) {
     return portions.filter(it => it.total && Number(it.total) !== 0)
-                   .map(it => ({...it, total: Number(it.total)}));
+                   .map(it => ({ ...it, total: Number(it.total) }));
   }
 
   let normalPortions = normalizePortions(matchPlan.portions);
 
-  // สร้างมุมมองปกติ (แยกหมวดตามที่มี)
-  function computeMeals(portions){
-    // return array with breakfast/lunch/dinner based on rules: simple equal split -> round to .0 or .5
-    // helper for splitting number into 3 parts with increments of 0.5
-    function splitIntoThree(n){
-      // n may be float. We convert to units of 0.5 (i.e., multiply by 2), split integer roughly
-      const units = Math.round(n * 2); // units of 0.5
+  // ✅ ฟังก์ชันเรียงหมวดอาหารอัตโนมัติ
+  function sortByFoodOrder(portions) {
+    const order = [
+      "ข้าว-แป้ง",
+      "เนื้อสัตว์ไขมันต่ำมาก",
+      "เนื้อสัตว์ไขมันต่ำ",
+      "เนื้อสัตว์ไขมันปานกลาง",
+      "เนื้อสัตว์ไขมันสูง",
+      "ไขมัน",
+      "ผัก ก",
+      "ผัก ข",
+      "ผลไม้",
+      "นมไขมันเต็มส่วน",
+      "นมพร่องมันเนย",
+      "นมขาดมันเนย",
+      "น้ำตาลเพิ่มสำหรับประกอบอาหาร"
+    ];
+    return portions.sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type));
+  }
+
+  normalPortions = sortByFoodOrder(normalPortions);
+
+  // 🧮 แบ่งส่วนมื้ออาหาร
+  function computeMeals(portions) {
+    function splitIntoThree(n) {
+      const units = Math.round(n * 2);
       const base = Math.floor(units / 3);
-      let rem = units - base*3;
-      // distribute remainder so that the larger parts go to breakfast/mid/dinner per your rule:
-      // if rem==1 => give to lunch (middle) (as user wanted)
-      // if rem==2 => give to breakfast & lunch
+      let rem = units - base * 3;
       let parts = [base, base, base];
       if (rem === 1) parts[1] += 1;
-      if (rem === 2){ parts[0] +=1; parts[1] +=1; }
-      // convert back to values (units/2)
-      return parts.map(u => (u/2));
+      if (rem === 2) { parts[0] += 1; parts[1] += 1; }
+      return parts.map(u => u / 2);
     }
 
     return portions.map(p => {
-      const [b,l,d] = splitIntoThree(p.total);
-      return {...p, breakfast:b, lunch:l, dinner:d};
+      const [b, l, d] = splitIntoThree(p.total);
+      return { ...p, breakfast: b, lunch: l, dinner: d };
     });
   }
 
   let renderedCombined = false;
-  function renderTable(portions, combineMeat=false){
-    // clear
+
+  function renderTable(portions, combineMeat = false) {
     foodTableBody.innerHTML = "";
-    // if combineMeat, combine all "เนื้อสัตว์" and "ถั่ว" into one row labeled "เนื้อสัตว์ (รวม)"
+
     let working = JSON.parse(JSON.stringify(portions));
-    if (combineMeat){
-      const meatKeys = ["เนื้อสัตว์","ถั่ว"];
+    if (combineMeat) {
+      const meatKeys = ["เนื้อสัตว์", "ถั่ว"];
       const meat = working.filter(r => meatKeys.some(k => r.type.includes(k)));
       const others = working.filter(r => !meatKeys.some(k => r.type.includes(k)));
-      if (meat.length>0){
-        const totalMeat = meat.reduce((s,x)=>s + Number(x.total),0);
+      if (meat.length > 0) {
+        const totalMeat = meat.reduce((s, x) => s + Number(x.total), 0);
         others.unshift({
-          type:"เนื้อสัตว์ (รวม)",
+          type: "เนื้อสัตว์ (รวม)",
           total: totalMeat
         });
       }
       working = others;
     }
 
-    // compute meals
     const withMeals = computeMeals(working);
 
     withMeals.forEach((row, idx) => {
       const tr = document.createElement("tr");
       tr.innerHTML = `
-        <td>${idx+1}</td>
+        <td>${idx + 1}</td>
         <td style="text-align:left">${row.type}</td>
         <td>${row.total}</td>
         <td>${row.breakfast % 1 === 0 ? row.breakfast.toFixed(0) : row.breakfast.toFixed(1)}</td>
@@ -151,13 +163,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // initial render: normal
+  // 🔹 Render เริ่มต้น
   renderTable(normalPortions, false);
 
-  // toggle combine when click text
+  // 🔹 Toggle รวม/แยกเนื้อสัตว์
   combineToggle.addEventListener("click", () => {
     renderedCombined = !renderedCombined;
-    combineToggle.textContent = renderedCombined ? "แยกโปรตีน" : "รวมโปรตีน";
+    combineToggle.textContent = renderedCombined ? "แยกเนื้อสัตว์" : "รวมเนื้อสัตว์";
     renderTable(normalPortions, renderedCombined);
   });
 });
