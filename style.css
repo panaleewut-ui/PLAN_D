@@ -551,22 +551,6 @@ tr[data-type="น้ำตาลเพิ่มสำหรับประกอ
   background: #ffcc33;
 }
 
-/* ✅ สีพื้นหลังตามหมวด (ให้แน่ใจว่าไม่โดนทับ) */
-tr:nth-child(even) { background: transparent !important; }
-
-tr[data-type="ข้าว-แป้ง"] { background-color: #fff9cc !important; }
-tr[data-type="เนื้อสัตว์ไขมันต่ำมาก"] { background-color: #d7f9d7 !important; }
-tr[data-type="เนื้อสัตว์ไขมันต่ำ"] { background-color: #c0f0c0 !important; }
-tr[data-type="เนื้อสัตว์ไขมันปานกลาง"] { background-color: #a9e6a9 !important; }
-tr[data-type="เนื้อสัตว์ไขมันสูง"] { background-color: #92dd92 !important; }
-tr[data-type="ไขมัน"] { background-color: #ffe6b3 !important; }
-tr[data-type="ผัก ก"] { background-color: #e8fbe8 !important; }
-tr[data-type="ผัก ข"] { background-color: #d4f5d4 !important; }
-tr[data-type="ผลไม้"] { background-color: #ffe6f0 !important; }
-tr[data-type="นมไขมันเต็มส่วน"] { background-color: #fff3d9 !important; }
-tr[data-type="นมพร่องมันเนย"] { background-color: #ffecc2 !important; }
-tr[data-type="นมขาดมันเนย"] { background-color: #ffe5ad !important; }
-tr[data-type="น้ำตาลเพิ่มสำหรับประกอบอาหาร"] { background-color: #f0f0f0 !important; }
 
 /* ✅ จัดหัวเรื่องให้อยู่ตรงกลางจริง */
 .result-header {
@@ -578,6 +562,7 @@ tr[data-type="น้ำตาลเพิ่มสำหรับประกอ
 }
 
 /* ✅ สีพื้นหลังตามหมวด (ใหม่) */
+/* ✅ สีพื้นหลังตามหมวด (ให้แน่ใจว่าไม่โดนทับ) */
 tr:nth-child(even) { background: transparent !important; }
 
 /* ข้าวแป้ง */
