@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ผลลัพธ์ | PLAN :D</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="result-page">
-  <div class="container">
-    <h2>ผลลัพธ์ของคุณ</h2>
-    <p id="goalResult"></p>
-    <p id="tdeeResult"></p>
+  <div class="bg-overlay"></div>
+  <div class="container result-container">
+    <header class="result-header">
+      <h2>ผลลัพธ์ของคุณ</h2>
+      <div class="top-actions">
+        <span id="combineToggle" class="combine-toggle">รวมโปรตีน</span>
+        <button class="secondary-btn" onclick="location.href='index.html'">ย้อนกลับหน้าแรก</button>
+      </div>
+    </header>
 
-    <div id="foodTableContainer">
-      <p class="table-note">รวมโปรตีน</p>
-      <table id="foodTable">
+    <section class="summary card">
+      <div class="left">
+        <p id="personalInfo"></p>
+        <p id="goalResult" class="muted"></p>
+        <p id="tdeeOriginal" class="muted"></p>
+        <p id="tdeeResult" class="strong"></p>
+        <p id="proteinResult" class="muted"></p>
+      </div>
+      <div class="right">
+        <div id="distBoxes" class="dist-boxes">
+          <!-- แสดง Carb / Protein / Fat % -->
+        </div>
+        <p id="exampleText" class="example-text muted"></p>
+      </div>
+    </section>
+
+    <section id="foodTableContainer" class="card">
+      <h3>ตัวอย่างตารางสัดส่วนอาหารที่ให้พลังงาน</h3>
+      <table id="foodTable" class="food-table">
         <thead>
           <tr>
+            <th>ลำดับ</th>
             <th>หมวดอาหาร</th>
-            <th>รวมทั้งหมด (ส่วนแลกเปลี่ยน)</th>
-            <th>3 มื้อ</th>
-            <th>2 มื้อ</th>
+            <th>จำนวนส่วน (ทั้งวัน)</th>
+            <th>เช้า</th>
+            <th>กลางวัน</th>
+            <th>เย็น</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody id="foodTableBody"></tbody>
       </table>
-    </div>
-
-    <button onclick="location.href='index.html'" class="main-btn">ย้อนกลับหน้าแรก</button>
+    </section>
   </div>
 
-
-<script src="data.js"></script>
-<script type="module" src="result.js"></script>
+  <script type="module" src="result.js"></script>
+  <script type="module" src="data.js"></script>
 </body>
 </html>
