@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const distBoxes = document.getElementById("distBoxes");
   const exampleText = document.getElementById("exampleText");
   const foodTableBody = document.getElementById("foodTableBody");
-  const combineToggle = document.getElementById("combineToggle");
 
   if (!gender || !tdeeBase || !tdeeFinal) {
     foodTableBody.innerHTML = "<p>ไม่พบข้อมูลการคำนวณ โปรดย้อนกลับไปกรอกใหม่</p>";
@@ -86,22 +85,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let normalPortions = normalizePortions(matchPlan.portions);
 
+  // ✅ ลำดับหมวดตามที่กำหนด + โทนสีใหม่
   const foodOrder = [
     { type: "ข้าว-แป้ง", color: "#fff9cc" },
     { type: "เนื้อสัตว์", isHeader: true, color: "#ffffff" },
-    { type: "เนื้อสัตว์ไขมันต่ำมาก", indent: true, color: "#d7f9d7" },
-    { type: "เนื้อสัตว์ไขมันต่ำ", indent: true, color: "#c0f0c0" },
-    { type: "เนื้อสัตว์ไขมันปานกลาง", indent: true, color: "#a9e6a9" },
-    { type: "เนื้อสัตว์ไขมันสูง", indent: true, color: "#92dd92" },
-    { type: "ไขมัน", color: "#ffe6b3" },
+    { type: "เนื้อสัตว์ไขมันต่ำมาก", indent: true, color: "#ffe1e6" },
+    { type: "เนื้อสัตว์ไขมันต่ำ", indent: true, color: "#ffc4cc" },
+    { type: "เนื้อสัตว์ไขมันปานกลาง", indent: true, color: "#ffa3af" },
+    { type: "เนื้อสัตว์ไขมันสูง", indent: true, color: "#ff8899" },
+    { type: "ไขมัน", color: "#eeeeee" },
     { type: "ผัก", isHeader: true, color: "#ffffff" },
     { type: "ผัก ก", indent: true, color: "#e8fbe8" },
     { type: "ผัก ข", indent: true, color: "#d4f5d4" },
     { type: "ผลไม้", color: "#ffe6f0" },
     { type: "นม", isHeader: true, color: "#ffffff" },
-    { type: "นมไขมันเต็มส่วน", indent: true, color: "#fff3d9" },
-    { type: "นมพร่องมันเนย", indent: true, color: "#ffecc2" },
-    { type: "นมขาดมันเนย", indent: true, color: "#ffe5ad" },
+    { type: "นมไขมันเต็มส่วน", indent: true, color: "#d9ecff" },
+    { type: "นมพร่องมันเนย", indent: true, color: "#c2e0ff" },
+    { type: "นมขาดมันเนย", indent: true, color: "#add4ff" },
     { type: "น้ำตาลเพิ่มสำหรับประกอบอาหาร", color: "#f0f0f0" }
   ];
 
@@ -143,8 +143,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const tr = document.createElement("tr");
       tr.setAttribute("data-type", row.type);
       tr.style.backgroundColor = row.color || "white";
+
       const indentStyle = row.indent ? "padding-left: 20px;" : "";
       const boldStyle = row.isHeader ? "font-weight: 600;" : "";
+
       tr.innerHTML = `
         <td>${idx + 1}</td>
         <td style="text-align:left; ${indentStyle} ${boldStyle}">${row.type}</td>
@@ -164,15 +166,6 @@ document.addEventListener("DOMContentLoaded", () => {
         : val.toFixed(1)
       : val;
   }
-
-  // ✅ toggle ทำงานได้
-  let combined = false;
-  combineToggle.addEventListener("click", () => {
-    combined = !combined;
-    combineToggle.textContent = combined ? "แยกเนื้อสัตว์" : "รวมเนื้อสัตว์";
-    combineToggle.classList.toggle("active");
-    renderTable(normalPortions);
-  });
 
   renderTable(normalPortions);
 });
