@@ -132,27 +132,50 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderTable(portions) {
-    foodTableBody.innerHTML = "";
-    const withMeals = computeMeals(portions);
+  foodTableBody.innerHTML = "";
+  const withMeals = computeMeals(portions);
 
-    withMeals.forEach((row, idx) => {
-      const tr = document.createElement("tr");
-      tr.style.backgroundColor = row.color || "white";
+  withMeals.forEach((row, idx) => {
+    const tr = document.createElement("tr");
 
-      const indentStyle = row.indent ? "padding-left: 20px;" : "";
-      const boldStyle = row.isHeader ? "font-weight: 600;" : "";
+    // ✅ ให้ CSS ดึงสีได้จาก data-type
+    tr.setAttribute("data-type", row.type);
 
-      tr.innerHTML = `
-        <td>${idx + 1}</td>
-        <td style="text-align:left; ${indentStyle} ${boldStyle}">${row.type}</td>
-        <td>${row.total || "-"}</td>
-        <td>${typeof row.breakfast === "number" ? (row.breakfast % 1 === 0 ? row.breakfast.toFixed(0) : row.breakfast.toFixed(1)) : row.breakfast}</td>
-        <td>${typeof row.lunch === "number" ? (row.lunch % 1 === 0 ? row.lunch.toFixed(0) : row.lunch.toFixed(1)) : row.lunch}</td>
-        <td>${typeof row.dinner === "number" ? (row.dinner % 1 === 0 ? row.dinner.toFixed(0) : row.dinner.toFixed(1)) : row.dinner}</td>
-      `;
-      foodTableBody.appendChild(tr);
-    });
-  }
+    // ✅ fallback สีพื้นหลัง (เฉพาะ header)
+    tr.style.backgroundColor = row.color || "white";
+
+    const indentStyle = row.indent ? "padding-left: 20px;" : "";
+    const boldStyle = row.isHeader ? "font-weight: 600;" : "";
+
+    tr.innerHTML = `
+      <td>${idx + 1}</td>
+      <td style="text-align:left; ${indentStyle} ${boldStyle}">${row.type}</td>
+      <td>${row.total || "-"}</td>
+      <td>${
+        typeof row.breakfast === "number"
+          ? row.breakfast % 1 === 0
+            ? row.breakfast.toFixed(0)
+            : row.breakfast.toFixed(1)
+          : row.breakfast
+      }</td>
+      <td>${
+        typeof row.lunch === "number"
+          ? row.lunch % 1 === 0
+            ? row.lunch.toFixed(0)
+            : row.lunch.toFixed(1)
+          : row.lunch
+      }</td>
+      <td>${
+        typeof row.dinner === "number"
+          ? row.dinner % 1 === 0
+            ? row.dinner.toFixed(0)
+            : row.dinner.toFixed(1)
+          : row.dinner
+      }</td>
+    `;
+    foodTableBody.appendChild(tr);
+  });
+}
 
   renderTable(normalPortions);
 });
