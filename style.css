@@ -205,3 +205,103 @@ input:focus,select:focus{ outline:none; box-shadow:0 3px 9px rgba(0,0,0,0.06); b
   .app-name{ font-size:1.6rem; }
   .main-btn{ padding:12px; }
 }
+
+/* ---- ปุ่มในหน้า form ---- */
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.short-btn {
+  width: 50%;
+  max-width: 240px;
+}
+
+/* ---- หน้าผลลัพธ์ ---- */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-box {
+  flex: 1 1 300px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.light-box { background: #f9f9f9; }
+.mid-box { background: #f5f2ed; }
+.dark-box { background: #e9edf1; }
+
+.caloric-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.caloric-box div {
+  flex: 1;
+  background: white;
+  margin: 0 5px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* ---- ปุ่มรวม/แยกเนื้อสัตว์ ---- */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.table-subtitle {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.3rem;
+}
+
+.toggle-btn {
+  background: #fff8e6;
+  border: 1px solid #f3d07c;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ---- ตารางหมวดอาหาร ---- */
+.table-container {
+  overflow-x: auto;
+}
+
+#foodTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#foodTable th, #foodTable td {
+  border: 1px solid #eaeaea;
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+}
+
+/* แยกสีหมวดต่างๆ */
+tr td:nth-child(2) {
+  font-weight: 500;
+}
+
+tr[data-category="ข้าว-แป้ง"] td:nth-child(2) { background-color: #fff8d6; }
+tr[data-category="ผัก ก"] td:nth-child(2) { background-color: #e6f8e0; }
+tr[data-category="ผัก ข"] td:nth-child(2) { background-color: #d5f5d0; }
+tr[data-category^="เนื้อสัตว์"] td:nth-child(2) { background-color: #ffeedd; }
+tr[data-category="ไขมัน"] td:nth-child(2) { background-color: #fff4e6; }
+tr[data-category="ผลไม้"] td:nth-child(2) { background-color: #ffe6ec; }
+tr[data-category^="นม"] td:nth-child(2) { background-color: #eaf3ff; }
+tr[data-category^="น้ำตาล"] td:nth-child(2) { background-color: #f2f2f2; }
