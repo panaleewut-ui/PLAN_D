@@ -591,3 +591,8 @@ tr[data-type="นมขาดมันเนย"] { background-color: #add4ff !i
 
 /* น้ำตาล */
 tr[data-type="น้ำตาลเพิ่มสำหรับประกอบอาหาร"] { background-color: #f0f0f0 !important; }
+
+td.gray-meal {
+  background-color: #f0f0f0 !important;
+  color: #555;
+}
