@@ -9,33 +9,51 @@
 </head>
 <body class="result-page">
   <div class="bg-overlay"></div>
+
   <div class="container result-container">
+    <!-- ส่วนหัว -->
     <header class="result-header">
       <h2>ผลลัพธ์ของคุณ</h2>
       <div class="top-actions">
-        <span id="combineToggle" class="combine-toggle">รวมโปรตีน</span>
         <button class="secondary-btn" onclick="location.href='index.html'">ย้อนกลับหน้าแรก</button>
       </div>
     </header>
 
-    <section class="summary card">
-      <div class="left">
+    <!-- กล่องข้อมูลสรุป -->
+    <section class="summary-section">
+      <div class="info-box light-box">
+        <h3>ข้อมูลส่วนตัว</h3>
         <p id="personalInfo"></p>
         <p id="goalResult" class="muted"></p>
+      </div>
+
+      <div class="info-box mid-box">
+        <h3>พลังงาน</h3>
         <p id="tdeeOriginal" class="muted"></p>
         <p id="tdeeResult" class="strong"></p>
-        <p id="proteinResult" class="muted"></p>
       </div>
-      <div class="right">
+
+      <div class="info-box dark-box">
+        <h3>โปรตีนตามเป้าหมาย</h3>
+        <p id="proteinResult" class="muted"></p>
+
         <div id="distBoxes" class="dist-boxes">
-          <!-- แสดง Carb / Protein / Fat % -->
+          <!-- คาร์บ / โปรตีน / ไขมัน -->
         </div>
-        <p id="exampleText" class="example-text muted"></p>
       </div>
     </section>
 
-    <section id="foodTableContainer" class="card">
-      <h3>ตัวอย่างตารางสัดส่วนอาหารที่ให้พลังงาน</h3>
+    <!-- หัวข้อของตาราง -->
+    <section class="table-section card">
+      <div class="table-header">
+        <div>
+          <h3>ตัวอย่างตารางสัดส่วนอาหาร</h3>
+          <p id="exampleText" class="example-text muted"></p>
+        </div>
+        <button id="combineToggle" class="combine-toggle">รวมเนื้อสัตว์</button>
+      </div>
+
+      <!-- ตาราง -->
       <table id="foodTable" class="food-table">
         <thead>
           <tr>
@@ -52,6 +70,7 @@
     </section>
   </div>
 
+  <!-- สคริปต์ -->
   <script type="module" src="data.js"></script>
   <script type="module" src="dataExtra.js"></script>
   <script type="module" src="result.js"></script>
