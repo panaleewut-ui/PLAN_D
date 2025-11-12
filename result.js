@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // ✅ ให้ข้อมูลเรียงลงมา
   personalInfo.innerHTML = `
     อายุ ${age} ปี<br>
     น้ำหนัก ${weight} กก.<br>
@@ -85,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let normalPortions = normalizePortions(matchPlan.portions);
 
-  // ✅ ลำดับหมวดตามที่กำหนด + โทนสีใหม่
   const foodOrder = [
     { type: "ข้าว-แป้ง", color: "#fff9cc" },
     { type: "เนื้อสัตว์", isHeader: true, color: "#ffffff" },
@@ -113,25 +111,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
   normalPortions = sortByFoodOrder(normalPortions);
 
+  // ✅ computeMeals() แก้ตามเงื่อนไข Atom ทั้งหมด
   function computeMeals(portions) {
-    function splitIntoThree(n) {
+    function splitNormal(n) {
       if (n === 0) return ["-", "-", "-"];
+      if (n <= 1) return ["-", n, "-"];
       const units = Math.round(n * 2);
       const base = Math.floor(units / 3);
       let rem = units - base * 3;
       let parts = [base, base, base];
       if (rem === 1) parts[1] += 1;
-      if (rem === 2) {
-        parts[0] += 1;
-        parts[1] += 1;
-      }
+      if (rem === 2) { parts[0] += 1; parts[1] += 1; }
       return parts.map((u) => u / 2);
     }
 
+    function splitMeat(p) {
+      const { total, type } = p;
+      if (total === 0) return ["-", "-", "-"];
+      let [b, l, d] = [0, 0, 0];
+      switch (type) {
+        case "เนื้อสัตว์ไขมันต่ำมาก": d = total; break;
+        case "เนื้อสัตว์ไขมันต่ำ": b = total; break;
+        case "เนื้อสัตว์ไขมันปานกลาง": l = total; break;
+        case "เนื้อสัตว์ไขมันสูง":
+          if (total >= 2) { b = 1; l = total - 1; } else { l = total; }
+          break;
+      }
+      return [b, l, d];
+    }
+
+    const grayTypes = ["ผลไม้", "นมไขมันเต็มส่วน", "นมพร่องมันเนย", "นมขาดมันเนย", "น้ำตาลเพิ่มสำหรับประกอบอาหาร"];
+
     return portions.map((p) => {
-      if (p.isHeader) return { ...p, breakfast: "-", lunch: "-", dinner: "-" };
-      const [b, l, d] = splitIntoThree(p.total);
-      return { ...p, breakfast: b, lunch: l, dinner: d };
+      if (p.isHeader) return { ...p, breakfast: "-", lunch: "-", dinner: "-", gray: false };
+      if (grayTypes.includes(p.type)) return { ...p, breakfast: "-", lunch: "-", dinner: "-", gray: true };
+      if (["เนื้อสัตว์ไขมันต่ำมาก", "เนื้อสัตว์ไขมันต่ำ", "เนื้อสัตว์ไขมันปานกลาง", "เนื้อสัตว์ไขมันสูง"].includes(p.type)) {
+        const [b, l, d] = splitMeat(p);
+        return { ...p, breakfast: b, lunch: l, dinner: d, gray: false };
+      }
+      const [b, l, d] = splitNormal(p.total);
+      return { ...p, breakfast: b, lunch: l, dinner: d, gray: false };
     });
   }
 
@@ -151,9 +170,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <td>${idx + 1}</td>
         <td style="text-align:left; ${indentStyle} ${boldStyle}">${row.type}</td>
         <td>${row.total || "-"}</td>
-        <td>${formatCell(row.breakfast)}</td>
-        <td>${formatCell(row.lunch)}</td>
-        <td>${formatCell(row.dinner)}</td>
+        <td class="${row.gray ? 'gray-meal' : ''}">${formatCell(row.breakfast)}</td>
+        <td class="${row.gray ? 'gray-meal' : ''}">${formatCell(row.lunch)}</td>
+        <td class="${row.gray ? 'gray-meal' : ''}">${formatCell(row.dinner)}</td>
       `;
       foodTableBody.appendChild(tr);
     });
