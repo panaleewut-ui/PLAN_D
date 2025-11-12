@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
   exampleText.textContent = `ตัวอย่างสัดส่วนอาหารที่ให้พลังงาน ${matchPlan.kcalActual} kcal และโปรตีน ${matchPlan.proteinActual} g`;
 
   // ฟังก์ชันช่วย
-  function normalizePortions(portions) {
-    return portions.filter(it => it.total && Number(it.total) !== 0)
-                   .map(it => ({ ...it, total: Number(it.total) }));
-  }
+ function normalizePortions(portions) {
+  // ❌ ไม่กรอง total = 0 อีกต่อไป (เพราะเราจะแสดงด้วย "-")
+  return portions.map(it => ({ ...it, total: Number(it.total || 0) }));
+}
 
   let normalPortions = normalizePortions(matchPlan.portions);
 
