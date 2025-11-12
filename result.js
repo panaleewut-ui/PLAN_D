@@ -1,5 +1,6 @@
 // result.js (module)
 import { foodPlans } from "./data.js";
+import { nutritionData } from "./dataExtra.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const gender = localStorage.getItem("gender");
@@ -41,6 +42,24 @@ document.addEventListener("DOMContentLoaded", () => {
     proteinNeed >= p.proteinRange[0] &&
     proteinNeed <= p.proteinRange[1]
   );
+
+  // 🧮 หา nutrition data จากไฟล์ใหม่
+  const matchNutrition = nutritionData.find(n =>
+    tdeeFinal >= n.energyMin &&
+    tdeeFinal <= n.energyMax &&
+    proteinNeed >= n.proteinMin &&
+    proteinNeed <= n.proteinMax
+  );
+
+// ถ้ามีข้อมูล nutritionData ให้ใช้แทนข้อมูลใน matchPlan
+  if (matchNutrition) {
+    matchPlan.kcalActual = matchNutrition.kcalActual;
+    matchPlan.proteinActual = matchNutrition.proteinActual;
+    matchPlan.carbPercent = matchNutrition.carbPercent;
+    matchPlan.proteinPercent = matchNutrition.proteinPercent;
+    matchPlan.fatPercent = matchNutrition.fatPercent;
+  }
+
 
   if (!matchPlan) {
     // ไม่มีข้อมูล
