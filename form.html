@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>กรอกข้อมูล | PLAN :D</title>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="form-page">
-  <div class="container">
-    <h2>กรอกข้อมูลของคุณ</h2>
+  <div class="bg-overlay"></div>
+  <div class="container form-container">
+    <h2 class="form-title">กรอกข้อมูลของคุณ</h2>
 
-    <form id="userForm">
-      <label>เพศ:</label>
-      <select id="gender">
+    <form id="userForm" class="card">
+      <label>เพศ</label>
+      <select id="gender" required>
         <option value="male">ชาย</option>
         <option value="female">หญิง</option>
       </select>
 
-      <label>อายุ (ปี):</label>
-      <input type="number" id="age" placeholder="กรอกอายุของคุณ">
+      <label>อายุ (ปี)</label>
+      <input type="number" id="age" placeholder="เช่น 25" required min="5" />
 
-      <label>น้ำหนัก (กก.):</label>
-      <input type="number" id="weight" placeholder="กรอกน้ำหนักของคุณ">
+      <label>น้ำหนัก (กก.)</label>
+      <input type="number" id="weight" placeholder="เช่น 60" required min="1" step="0.1" />
 
-      <label>ส่วนสูง (ซม.):</label>
-      <input type="number" id="height" placeholder="กรอกส่วนสูงของคุณ">
+      <label>ส่วนสูง (ซม.)</label>
+      <input type="number" id="height" placeholder="เช่น 170" required min="30" step="0.1" />
 
-      <label>ระดับกิจกรรม:</label>
-      <select id="activity">
+      <label>ระดับกิจกรรม</label>
+      <select id="activity" required>
         <option value="1.2">ไม่ค่อยออกกำลังกาย</option>
         <option value="1.375">ออกกำลังกายน้อย</option>
         <option value="1.55">ออกกำลังกายปานกลาง</option>
@@ -36,18 +37,17 @@
         <option value="1.9">ออกกำลังกายหนักมาก</option>
       </select>
 
-      <label>เป้าหมายของคุณ:</label>
-      <select id="goal">
+      <label>เป้าหมายของคุณ</label>
+      <select id="goal" required>
         <option value="maintain">คงน้ำหนัก</option>
-        <option value="lose">ลดน้ำหนัก</option>
-        <option value="gain">เพิ่มน้ำหนัก</option>
+        <option value="lose">ลดน้ำหนัก (-500 kcal)</option>
+        <option value="gain">เพิ่มน้ำหนัก (+500 kcal)</option>
       </select>
-   
+
       <button type="submit" class="main-btn">คำนวณเลย!</button>
     </form>
   </div>
 
   <script src="form.js"></script>
-
 </body>
 </html>
