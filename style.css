@@ -27,7 +27,7 @@ body{
   z-index:-1;
   background-size:cover;
   background-position:center;
-  opacity:0.18;
+  opacity:0.5;
   filter:saturate(0.9);
 }
 
