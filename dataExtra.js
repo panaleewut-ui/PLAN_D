@@ -5,10 +5,10 @@ export const nutritionData = [
     "proteinMin": 40,
     "proteinMax": 44,
     "kcalActual": 900,
-    "proteinActual": "40.5",
-    "carbPercent": "54",
-    "proteinPercent": "18",
-    "fatPercent": "28"
+    "proteinActual": 40.5,
+    "carbPercent": 54,
+    "proteinPercent": 18,
+    "fatPercent": 28
   },
   {
     "energyMin": 800,
@@ -16,10 +16,10 @@ export const nutritionData = [
     "proteinMin": 45,
     "proteinMax": 49,
     "kcalActual": 900,
-    "proteinActual": "45",
-    "carbPercent": "53",
-    "proteinPercent": "20",
-    "fatPercent": "27"
+    "proteinActual": 45,
+    "carbPercent": 53,
+    "proteinPercent": 20,
+    "fatPercent": 27
   },
   {
     "energyMin": 800,
@@ -27,10 +27,10 @@ export const nutritionData = [
     "proteinMin": 50,
     "proteinMax": 54,
     "kcalActual": 900,
-    "proteinActual": "52",
-    "carbPercent": "51",
-    "proteinPercent": "23",
-    "fatPercent": "26"
+    "proteinActual": 52,
+    "carbPercent": 51,
+    "proteinPercent": 23,
+    "fatPercent": 26
   },
   {
     "energyMin": 800,
@@ -38,10 +38,10 @@ export const nutritionData = [
     "proteinMin": 55,
     "proteinMax": 59,
     "kcalActual": 900,
-    "proteinActual": "58",
-    "carbPercent": "50",
-    "proteinPercent": "25",
-    "fatPercent": "25"
+    "proteinActual": 58,
+    "carbPercent": 50,
+    "proteinPercent": 25,
+    "fatPercent": 25
   },
   {
     "energyMin": 800,
@@ -49,10 +49,10 @@ export const nutritionData = [
     "proteinMin": 60,
     "proteinMax": 64,
     "kcalActual": 900,
-    "proteinActual": "60.5",
-    "carbPercent": "49",
-    "proteinPercent": "27",
-    "fatPercent": "24"
+    "proteinActual": 60.5,
+    "carbPercent": 49,
+    "proteinPercent": 27,
+    "fatPercent": 24
   },
   {
     "energyMin": 800,
@@ -60,10 +60,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 900,
-    "proteinActual": "64",
-    "carbPercent": "48",
-    "proteinPercent": "29",
-    "fatPercent": "23"
+    "proteinActual": 64,
+    "carbPercent": 48,
+    "proteinPercent": 29,
+    "fatPercent": 23
   },
   {
     "energyMin": 800,
@@ -71,10 +71,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 900,
-    "proteinActual": "72",
-    "carbPercent": "47",
-    "proteinPercent": "32",
-    "fatPercent": "21"
+    "proteinActual": 72,
+    "carbPercent": 47,
+    "proteinPercent": 32,
+    "fatPercent": 21
   },
   {
     "energyMin": 800,
@@ -82,10 +82,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 900,
-    "proteinActual": "75.5",
-    "carbPercent": "45",
-    "proteinPercent": "34",
-    "fatPercent": "21"
+    "proteinActual": 75.5,
+    "carbPercent": 45,
+    "proteinPercent": 34,
+    "fatPercent": 21
   },
   {
     "energyMin": 1001,
@@ -93,10 +93,10 @@ export const nutritionData = [
     "proteinMin": 40,
     "proteinMax": 44,
     "kcalActual": 1100,
-    "proteinActual": "43",
-    "carbPercent": "50",
-    "proteinPercent": "15",
-    "fatPercent": "30"
+    "proteinActual": 43,
+    "carbPercent": 50,
+    "proteinPercent": 15,
+    "fatPercent": 30
   },
   {
     "energyMin": 1001,
@@ -104,10 +104,10 @@ export const nutritionData = [
     "proteinMin": 45,
     "proteinMax": 49,
     "kcalActual": 1100,
-    "proteinActual": "48",
-    "carbPercent": "53",
-    "proteinPercent": "17",
-    "fatPercent": "30"
+    "proteinActual": 48,
+    "carbPercent": 53,
+    "proteinPercent": 17,
+    "fatPercent": 30
   },
   {
     "energyMin": 1001,
@@ -115,10 +115,10 @@ export const nutritionData = [
     "proteinMin": 50,
     "proteinMax": 54,
     "kcalActual": 1100,
-    "proteinActual": "50",
-    "carbPercent": "52",
-    "proteinPercent": "18",
-    "fatPercent": "30"
+    "proteinActual": 50,
+    "carbPercent": 52,
+    "proteinPercent": 18,
+    "fatPercent": 30
   },
   {
     "energyMin": 1001,
@@ -126,10 +126,10 @@ export const nutritionData = [
     "proteinMin": 55,
     "proteinMax": 59,
     "kcalActual": 1100,
-    "proteinActual": "55",
-    "carbPercent": "50",
-    "proteinPercent": "20",
-    "fatPercent": "30"
+    "proteinActual": 55,
+    "carbPercent": 50,
+    "proteinPercent": 20,
+    "fatPercent": 30
   },
   {
     "energyMin": 1001,
@@ -137,10 +137,10 @@ export const nutritionData = [
     "proteinMin": 60,
     "proteinMax": 64,
     "kcalActual": 1100,
-    "proteinActual": "60.5",
-    "carbPercent": "48",
-    "proteinPercent": "22",
-    "fatPercent": "30"
+    "proteinActual": 60.5,
+    "carbPercent": 48,
+    "proteinPercent": 22,
+    "fatPercent": 30
   },
   {
     "energyMin": 1001,
@@ -148,10 +148,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 1100,
-    "proteinActual": "67",
-    "carbPercent": "46",
-    "proteinPercent": "24",
-    "fatPercent": "30"
+    "proteinActual": 67,
+    "carbPercent": 46,
+    "proteinPercent": 24,
+    "fatPercent": 30
   },
   {
     "energyMin": 1001,
@@ -159,10 +159,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 1100,
-    "proteinActual": "70.5",
-    "carbPercent": "44",
-    "proteinPercent": "26",
-    "fatPercent": "30"
+    "proteinActual": 70.5,
+    "carbPercent": 44,
+    "proteinPercent": 26,
+    "fatPercent": 30
   },
   {
     "energyMin": 1001,
@@ -170,10 +170,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 1100,
-    "proteinActual": "78",
-    "carbPercent": "47",
-    "proteinPercent": "28",
-    "fatPercent": "25"
+    "proteinActual": 78,
+    "carbPercent": 47,
+    "proteinPercent": 28,
+    "fatPercent": 25
   },
   {
     "energyMin": 1001,
@@ -236,10 +236,10 @@ export const nutritionData = [
     "proteinMin": 40,
     "proteinMax": 44,
     "kcalActual": 1300,
-    "proteinActual": "42",
-    "carbPercent": "57",
-    "proteinPercent": "13",
-    "fatPercent": "30"
+    "proteinActual": 42,
+    "carbPercent": 57,
+    "proteinPercent": 13,
+    "fatPercent": 30
   },
   {
     "energyMin": 1201,
@@ -247,10 +247,10 @@ export const nutritionData = [
     "proteinMin": 45,
     "proteinMax": 49,
     "kcalActual": 1300,
-    "proteinActual": "49",
-    "carbPercent": "56",
-    "proteinPercent": "14",
-    "fatPercent": "30"
+    "proteinActual": 49,
+    "carbPercent": 56,
+    "proteinPercent": 14,
+    "fatPercent": 30
   },
   {
     "energyMin": 1201,
@@ -258,10 +258,10 @@ export const nutritionData = [
     "proteinMin": 50,
     "proteinMax": 54,
     "kcalActual": 1300,
-    "proteinActual": "51",
-    "carbPercent": "55",
-    "proteinPercent": "16",
-    "fatPercent": "29"
+    "proteinActual": 51,
+    "carbPercent": 55,
+    "proteinPercent": 16,
+    "fatPercent": 29
   },
   {
     "energyMin": 1201,
@@ -269,10 +269,10 @@ export const nutritionData = [
     "proteinMin": 55,
     "proteinMax": 59,
     "kcalActual": 1300,
-    "proteinActual": "56",
-    "carbPercent": "55",
-    "proteinPercent": "17",
-    "fatPercent": "28"
+    "proteinActual": 56,
+    "carbPercent": 55,
+    "proteinPercent": 17,
+    "fatPercent": 28
   },
   {
     "energyMin": 1201,
@@ -280,10 +280,10 @@ export const nutritionData = [
     "proteinMin": 60,
     "proteinMax": 64,
     "kcalActual": 1300,
-    "proteinActual": "60",
-    "carbPercent": "55",
-    "proteinPercent": "19",
-    "fatPercent": "26"
+    "proteinActual": 60,
+    "carbPercent": 55,
+    "proteinPercent": 19,
+    "fatPercent": 26
   },
   {
     "energyMin": 1201,
@@ -291,10 +291,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 1300,
-    "proteinActual": "65",
-    "carbPercent": "55",
-    "proteinPercent": "20",
-    "fatPercent": "25"
+    "proteinActual": 65,
+    "carbPercent": 55,
+    "proteinPercent": 20,
+    "fatPercent": 25
   },
   {
     "energyMin": 1201,
@@ -302,10 +302,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 1300,
-    "proteinActual": "72",
-    "carbPercent": "53",
-    "proteinPercent": "22",
-    "fatPercent": "25"
+    "proteinActual": 72,
+    "carbPercent": 53,
+    "proteinPercent": 22,
+    "fatPercent": 25
   },
   {
     "energyMin": 1201,
@@ -313,10 +313,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 1300,
-    "proteinActual": "77",
-    "carbPercent": "51",
-    "proteinPercent": "24",
-    "fatPercent": "25"
+    "proteinActual": 77,
+    "carbPercent": 51,
+    "proteinPercent": 24,
+    "fatPercent": 25
   },
   {
     "energyMin": 1201,
@@ -324,10 +324,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 1300,
-    "proteinActual": "81",
-    "carbPercent": "50",
-    "proteinPercent": "25",
-    "fatPercent": "25"
+    "proteinActual": 81,
+    "carbPercent": 50,
+    "proteinPercent": 25,
+    "fatPercent": 25
   },
   {
     "energyMin": 1201,
@@ -335,10 +335,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 1300,
-    "proteinActual": "86",
-    "carbPercent": "48",
-    "proteinPercent": "27",
-    "fatPercent": "25"
+    "proteinActual": 86,
+    "carbPercent": 48,
+    "proteinPercent": 27,
+    "fatPercent": 25
   },
   {
     "energyMin": 1201,
@@ -346,10 +346,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 1300,
-    "proteinActual": "93",
-    "carbPercent": "47",
-    "proteinPercent": "28",
-    "fatPercent": "25"
+    "proteinActual": 93,
+    "carbPercent": 47,
+    "proteinPercent": 28,
+    "fatPercent": 25
   },
   {
     "energyMin": 1201,
@@ -357,10 +357,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 1300,
-    "proteinActual": "95",
-    "carbPercent": "45",
-    "proteinPercent": "30",
-    "fatPercent": "25"
+    "proteinActual": 95,
+    "carbPercent": 45,
+    "proteinPercent": 30,
+    "fatPercent": 25
   },
   {
     "energyMin": 1201,
@@ -368,10 +368,10 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 1300,
-    "proteinActual": "101",
-    "carbPercent": "45",
-    "proteinPercent": "31",
-    "fatPercent": "24"
+    "proteinActual": 101,
+    "carbPercent": 45,
+    "proteinPercent": 31,
+    "fatPercent": 24
   },
   {
     "energyMin": 1401,
@@ -379,10 +379,10 @@ export const nutritionData = [
     "proteinMin": 40,
     "proteinMax": 44,
     "kcalActual": 1500,
-    "proteinActual": "41",
-    "carbPercent": "57",
-    "proteinPercent": "11",
-    "fatPercent": "32"
+    "proteinActual": 41,
+    "carbPercent": 57,
+    "proteinPercent": 11,
+    "fatPercent": 32
   },
   {
     "energyMin": 1401,
@@ -390,10 +390,10 @@ export const nutritionData = [
     "proteinMin": 45,
     "proteinMax": 49,
     "kcalActual": 1500,
-    "proteinActual": "42",
-    "carbPercent": "56",
-    "proteinPercent": "12",
-    "fatPercent": "32"
+    "proteinActual": 42,
+    "carbPercent": 56,
+    "proteinPercent": 12,
+    "fatPercent": 32
   },
   {
     "energyMin": 1401,
@@ -401,10 +401,10 @@ export const nutritionData = [
     "proteinMin": 50,
     "proteinMax": 54,
     "kcalActual": 1500,
-    "proteinActual": "52.5",
-    "carbPercent": "55",
-    "proteinPercent": "14",
-    "fatPercent": "31"
+    "proteinActual": 52.5,
+    "carbPercent": 55,
+    "proteinPercent": 14,
+    "fatPercent": 31
   },
   {
     "energyMin": 1401,
@@ -412,10 +412,10 @@ export const nutritionData = [
     "proteinMin": 55,
     "proteinMax": 59,
     "kcalActual": 1500,
-    "proteinActual": "57.5",
-    "carbPercent": "55",
-    "proteinPercent": "15",
-    "fatPercent": "30"
+    "proteinActual": 57.5,
+    "carbPercent": 55,
+    "proteinPercent": 15,
+    "fatPercent": 30
   },
   {
     "energyMin": 1401,
@@ -423,10 +423,10 @@ export const nutritionData = [
     "proteinMin": 60,
     "proteinMax": 64,
     "kcalActual": 1500,
-    "proteinActual": "58.5",
-    "carbPercent": "54",
-    "proteinPercent": "16",
-    "fatPercent": "30"
+    "proteinActual": 58.5,
+    "carbPercent": 54,
+    "proteinPercent": 16,
+    "fatPercent": 30
   },
   {
     "energyMin": 1401,
@@ -434,10 +434,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 1500,
-    "proteinActual": "68.5",
-    "carbPercent": "54",
-    "proteinPercent": "18",
-    "fatPercent": "28"
+    "proteinActual": 68.5,
+    "carbPercent": 54,
+    "proteinPercent": 18,
+    "fatPercent": 28
   },
   {
     "energyMin": 1401,
@@ -445,10 +445,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 1500,
-    "proteinActual": "70",
-    "carbPercent": "53",
-    "proteinPercent": "19",
-    "fatPercent": "28"
+    "proteinActual": 70,
+    "carbPercent": 53,
+    "proteinPercent": 19,
+    "fatPercent": 28
   },
   {
     "energyMin": 1401,
@@ -456,10 +456,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 1500,
-    "proteinActual": "76.5",
-    "carbPercent": "50",
-    "proteinPercent": "20",
-    "fatPercent": "30"
+    "proteinActual": 76.5,
+    "carbPercent": 50,
+    "proteinPercent": 20,
+    "fatPercent": 30
   },
   {
     "energyMin": 1401,
@@ -467,10 +467,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 1500,
-    "proteinActual": "81",
-    "carbPercent": "51",
-    "proteinPercent": "22",
-    "fatPercent": "27"
+    "proteinActual": 81,
+    "carbPercent": 51,
+    "proteinPercent": 22,
+    "fatPercent": 27
   },
   {
     "energyMin": 1401,
@@ -478,10 +478,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 1500,
-    "proteinActual": "86.5",
-    "carbPercent": "50",
-    "proteinPercent": "23",
-    "fatPercent": "27"
+    "proteinActual": 86.5,
+    "carbPercent": 50,
+    "proteinPercent": 23,
+    "fatPercent": 27
   },
   {
     "energyMin": 1401,
@@ -489,10 +489,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 1500,
-    "proteinActual": "91",
-    "carbPercent": "52",
-    "proteinPercent": "24",
-    "fatPercent": "24"
+    "proteinActual": 91,
+    "carbPercent": 52,
+    "proteinPercent": 24,
+    "fatPercent": 24
   },
   {
     "energyMin": 1401,
@@ -500,10 +500,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 1500,
-    "proteinActual": "97",
-    "carbPercent": "50",
-    "proteinPercent": "26",
-    "fatPercent": "24"
+    "proteinActual": 97,
+    "carbPercent": 50,
+    "proteinPercent": 26,
+    "fatPercent": 24
   },
   {
     "energyMin": 1401,
@@ -511,10 +511,10 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 1500,
-    "proteinActual": "103",
-    "carbPercent": "49",
-    "proteinPercent": "27",
-    "fatPercent": "24"
+    "proteinActual": 103,
+    "carbPercent": 49,
+    "proteinPercent": 27,
+    "fatPercent": 24
   },
   {
     "energyMin": 1601,
@@ -522,10 +522,10 @@ export const nutritionData = [
     "proteinMin": 40,
     "proteinMax": 44,
     "kcalActual": 1700,
-    "proteinActual": "46.5",
-    "carbPercent": "60",
-    "proteinPercent": "10",
-    "fatPercent": "30"
+    "proteinActual": 46.5,
+    "carbPercent": 60,
+    "proteinPercent": 10,
+    "fatPercent": 30
   },
   {
     "energyMin": 1601,
@@ -533,10 +533,10 @@ export const nutritionData = [
     "proteinMin": 45,
     "proteinMax": 49,
     "kcalActual": 1700,
-    "proteinActual": "49",
-    "carbPercent": "59",
-    "proteinPercent": "11",
-    "fatPercent": "30"
+    "proteinActual": 49,
+    "carbPercent": 59,
+    "proteinPercent": 11,
+    "fatPercent": 30
   },
   {
     "energyMin": 1601,
@@ -544,10 +544,10 @@ export const nutritionData = [
     "proteinMin": 50,
     "proteinMax": 54,
     "kcalActual": 1700,
-    "proteinActual": "51.5",
-    "carbPercent": "58",
-    "proteinPercent": "12",
-    "fatPercent": "30"
+    "proteinActual": 51.5,
+    "carbPercent": 58,
+    "proteinPercent": 12,
+    "fatPercent": 30
   },
   {
     "energyMin": 1601,
@@ -555,10 +555,10 @@ export const nutritionData = [
     "proteinMin": 55,
     "proteinMax": 59,
     "kcalActual": 1700,
-    "proteinActual": "56.5",
-    "carbPercent": "57",
-    "proteinPercent": "13",
-    "fatPercent": "30"
+    "proteinActual": 56.5,
+    "carbPercent": 57,
+    "proteinPercent": 13,
+    "fatPercent": 30
   },
   {
     "energyMin": 1601,
@@ -566,10 +566,10 @@ export const nutritionData = [
     "proteinMin": 60,
     "proteinMax": 64,
     "kcalActual": 1700,
-    "proteinActual": "61",
-    "carbPercent": "55",
-    "proteinPercent": "15",
-    "fatPercent": "30"
+    "proteinActual": 61,
+    "carbPercent": 55,
+    "proteinPercent": 15,
+    "fatPercent": 30
   },
   {
     "energyMin": 1601,
@@ -577,10 +577,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 1700,
-    "proteinActual": "67.5",
-    "carbPercent": "55",
-    "proteinPercent": "16",
-    "fatPercent": "29"
+    "proteinActual": 67.5,
+    "carbPercent": 55,
+    "proteinPercent": 16,
+    "fatPercent": 29
   },
   {
     "energyMin": 1601,
@@ -588,10 +588,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 1700,
-    "proteinActual": "70",
-    "carbPercent": "55",
-    "proteinPercent": "17",
-    "fatPercent": "28"
+    "proteinActual": 70,
+    "carbPercent": 55,
+    "proteinPercent": 17,
+    "fatPercent": 28
   },
   {
     "energyMin": 1601,
@@ -599,10 +599,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 1700,
-    "proteinActual": "78",
-    "carbPercent": "55",
-    "proteinPercent": "18",
-    "fatPercent": "27"
+    "proteinActual": 78,
+    "carbPercent": 55,
+    "proteinPercent": 18,
+    "fatPercent": 27
   },
   {
     "energyMin": 1601,
@@ -610,10 +610,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 1700,
-    "proteinActual": "81.5",
-    "carbPercent": "55",
-    "proteinPercent": "19",
-    "fatPercent": "26"
+    "proteinActual": 81.5,
+    "carbPercent": 55,
+    "proteinPercent": 19,
+    "fatPercent": 26
   },
   {
     "energyMin": 1601,
@@ -621,10 +621,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 1700,
-    "proteinActual": "88.5",
-    "carbPercent": "55",
-    "proteinPercent": "20",
-    "fatPercent": "25"
+    "proteinActual": 88.5,
+    "carbPercent": 55,
+    "proteinPercent": 20,
+    "fatPercent": 25
   },
   {
     "energyMin": 1601,
@@ -632,10 +632,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 1700,
-    "proteinActual": "91.5",
-    "carbPercent": "54",
-    "proteinPercent": "21",
-    "fatPercent": "25"
+    "proteinActual": 91.5,
+    "carbPercent": 54,
+    "proteinPercent": 21,
+    "fatPercent": 25
   },
   {
     "energyMin": 1601,
@@ -643,10 +643,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 1700,
-    "proteinActual": "97",
-    "carbPercent": "52",
-    "proteinPercent": "23",
-    "fatPercent": "25"
+    "proteinActual": 97,
+    "carbPercent": 52,
+    "proteinPercent": 23,
+    "fatPercent": 25
   },
   {
     "energyMin": 1601,
@@ -654,10 +654,10 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 1700,
-    "proteinActual": "104",
-    "carbPercent": "51",
-    "proteinPercent": "24",
-    "fatPercent": "25"
+    "proteinActual": 104,
+    "carbPercent": 51,
+    "proteinPercent": 24,
+    "fatPercent": 25
   },
   {
     "energyMin": 1801,
@@ -676,10 +676,10 @@ export const nutritionData = [
     "proteinMin": 45,
     "proteinMax": 49,
     "kcalActual": 1900,
-    "proteinActual": "45",
-    "carbPercent": "60",
-    "proteinPercent": "10",
-    "fatPercent": "30"
+    "proteinActual": 45,
+    "carbPercent": 60,
+    "proteinPercent": 10,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -687,10 +687,10 @@ export const nutritionData = [
     "proteinMin": 50,
     "proteinMax": 54,
     "kcalActual": 1900,
-    "proteinActual": "51",
-    "carbPercent": "59",
-    "proteinPercent": "11",
-    "fatPercent": "30"
+    "proteinActual": 51,
+    "carbPercent": 59,
+    "proteinPercent": 11,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -698,10 +698,10 @@ export const nutritionData = [
     "proteinMin": 55,
     "proteinMax": 59,
     "kcalActual": 1900,
-    "proteinActual": "57.5",
-    "carbPercent": "58",
-    "proteinPercent": "12",
-    "fatPercent": "30"
+    "proteinActual": 57.5,
+    "carbPercent": 58,
+    "proteinPercent": 12,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -709,10 +709,10 @@ export const nutritionData = [
     "proteinMin": 60,
     "proteinMax": 64,
     "kcalActual": 1900,
-    "proteinActual": "60",
-    "carbPercent": "57",
-    "proteinPercent": "13",
-    "fatPercent": "30"
+    "proteinActual": 60,
+    "carbPercent": 57,
+    "proteinPercent": 13,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -720,10 +720,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 1900,
-    "proteinActual": "64.5",
-    "carbPercent": "60",
-    "proteinPercent": "14",
-    "fatPercent": "26"
+    "proteinActual": 64.5,
+    "carbPercent": 60,
+    "proteinPercent": 14,
+    "fatPercent": 26
   },
   {
     "energyMin": 1801,
@@ -731,10 +731,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 1900,
-    "proteinActual": "72",
-    "carbPercent": "55",
-    "proteinPercent": "15",
-    "fatPercent": "30"
+    "proteinActual": 72,
+    "carbPercent": 55,
+    "proteinPercent": 15,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -742,10 +742,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 1900,
-    "proteinActual": "75",
-    "carbPercent": "54",
-    "proteinPercent": "16",
-    "fatPercent": "30"
+    "proteinActual": 75,
+    "carbPercent": 54,
+    "proteinPercent": 16,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -753,10 +753,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 1900,
-    "proteinActual": "80",
-    "carbPercent": "53",
-    "proteinPercent": "17",
-    "fatPercent": "30"
+    "proteinActual": 80,
+    "carbPercent": 53,
+    "proteinPercent": 17,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -764,10 +764,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 1900,
-    "proteinActual": "85.5",
-    "carbPercent": "52",
-    "proteinPercent": "18",
-    "fatPercent": "30"
+    "proteinActual": 85.5,
+    "carbPercent": 52,
+    "proteinPercent": 18,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -775,10 +775,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 1900,
-    "proteinActual": "90.5",
-    "carbPercent": "51",
-    "proteinPercent": "19",
-    "fatPercent": "30"
+    "proteinActual": 90.5,
+    "carbPercent": 51,
+    "proteinPercent": 19,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -786,10 +786,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 1900,
-    "proteinActual": "96",
-    "carbPercent": "50",
-    "proteinPercent": "20",
-    "fatPercent": "30"
+    "proteinActual": 96,
+    "carbPercent": 50,
+    "proteinPercent": 20,
+    "fatPercent": 30
   },
   {
     "energyMin": 1801,
@@ -797,10 +797,10 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 1900,
-    "proteinActual": "99.5",
-    "carbPercent": "49",
-    "proteinPercent": "21",
-    "fatPercent": "30"
+    "proteinActual": 99.5,
+    "carbPercent": 49,
+    "proteinPercent": 21,
+    "fatPercent": 30
   },
   {
     "energyMin": 2001,
@@ -830,10 +830,10 @@ export const nutritionData = [
     "proteinMin": 50,
     "proteinMax": 54,
     "kcalActual": 2100,
-    "proteinActual": "57",
-    "carbPercent": "60",
-    "proteinPercent": "10",
-    "fatPercent": "30"
+    "proteinActual": 57,
+    "carbPercent": 60,
+    "proteinPercent": 10,
+    "fatPercent": 30
   },
   {
     "energyMin": 2001,
@@ -841,10 +841,10 @@ export const nutritionData = [
     "proteinMin": 55,
     "proteinMax": 59,
     "kcalActual": 2100,
-    "proteinActual": "59",
-    "carbPercent": "60",
-    "proteinPercent": "11",
-    "fatPercent": "29"
+    "proteinActual": 59,
+    "carbPercent": 60,
+    "proteinPercent": 11,
+    "fatPercent": 29
   },
   {
     "energyMin": 2001,
@@ -852,10 +852,10 @@ export const nutritionData = [
     "proteinMin": 60,
     "proteinMax": 64,
     "kcalActual": 2100,
-    "proteinActual": "66",
-    "carbPercent": "59",
-    "proteinPercent": "12",
-    "fatPercent": "29"
+    "proteinActual": 66,
+    "carbPercent": 59,
+    "proteinPercent": 12,
+    "fatPercent": 29
   },
   {
     "energyMin": 2001,
@@ -863,10 +863,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 2100,
-    "proteinActual": "69.5",
-    "carbPercent": "55",
-    "proteinPercent": "13",
-    "fatPercent": "28"
+    "proteinActual": 69.5,
+    "carbPercent": 55,
+    "proteinPercent": 13,
+    "fatPercent": 28
   },
   {
     "energyMin": 2001,
@@ -874,10 +874,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 2100,
-    "proteinActual": "76.5",
-    "carbPercent": "59",
-    "proteinPercent": "14",
-    "fatPercent": "27"
+    "proteinActual": 76.5,
+    "carbPercent": 59,
+    "proteinPercent": 14,
+    "fatPercent": 27
   },
   {
     "energyMin": 2001,
@@ -885,10 +885,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 2100,
-    "proteinActual": "80",
-    "carbPercent": "59",
-    "proteinPercent": "15",
-    "fatPercent": "26"
+    "proteinActual": 80,
+    "carbPercent": 59,
+    "proteinPercent": 15,
+    "fatPercent": 26
   },
   {
     "energyMin": 2001,
@@ -896,10 +896,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 2100,
-    "proteinActual": "85",
-    "carbPercent": "59",
-    "proteinPercent": "16",
-    "fatPercent": "25"
+    "proteinActual": 85,
+    "carbPercent": 59,
+    "proteinPercent": 16,
+    "fatPercent": 25
   },
   {
     "energyMin": 2001,
@@ -907,10 +907,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 2100,
-    "proteinActual": "89.25",
-    "carbPercent": "58",
-    "proteinPercent": "17",
-    "fatPercent": "25"
+    "proteinActual": 89.25,
+    "carbPercent": 58,
+    "proteinPercent": 17,
+    "fatPercent": 25
   },
   {
     "energyMin": 2001,
@@ -918,10 +918,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 2100,
-    "proteinActual": "95.5",
-    "carbPercent": "57",
-    "proteinPercent": "18",
-    "fatPercent": "25"
+    "proteinActual": 95.5,
+    "carbPercent": 57,
+    "proteinPercent": 18,
+    "fatPercent": 25
   },
   {
     "energyMin": 2001,
@@ -929,10 +929,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 2100,
-    "proteinActual": "100",
-    "carbPercent": "56",
-    "proteinPercent": "19",
-    "fatPercent": "25"
+    "proteinActual": 100,
+    "carbPercent": 56,
+    "proteinPercent": 19,
+    "fatPercent": 25
   },
   {
     "energyMin": 2001,
@@ -940,10 +940,10 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 2100,
-    "proteinActual": "106",
-    "carbPercent": "55",
-    "proteinPercent": "20",
-    "fatPercent": "25"
+    "proteinActual": 106,
+    "carbPercent": 55,
+    "proteinPercent": 20,
+    "fatPercent": 25
   },
   {
     "energyMin": 2201,
@@ -951,10 +951,10 @@ export const nutritionData = [
     "proteinMin": 40,
     "proteinMax": 44,
     "kcalActual": 2300,
-    "proteinActual": "43",
-    "carbPercent": "60",
-    "proteinPercent": "7",
-    "fatPercent": "33"
+    "proteinActual": 43,
+    "carbPercent": 60,
+    "proteinPercent": 7,
+    "fatPercent": 33
   },
   {
     "energyMin": 2201,
@@ -962,10 +962,10 @@ export const nutritionData = [
     "proteinMin": 45,
     "proteinMax": 49,
     "kcalActual": 2300,
-    "proteinActual": "49",
-    "carbPercent": "60",
-    "proteinPercent": "8",
-    "fatPercent": "32"
+    "proteinActual": 49,
+    "carbPercent": 60,
+    "proteinPercent": 8,
+    "fatPercent": 32
   },
   {
     "energyMin": 2201,
@@ -973,10 +973,10 @@ export const nutritionData = [
     "proteinMin": 50,
     "proteinMax": 54,
     "kcalActual": 2300,
-    "proteinActual": "50",
-    "carbPercent": "60",
-    "proteinPercent": "9",
-    "fatPercent": "31"
+    "proteinActual": 50,
+    "carbPercent": 60,
+    "proteinPercent": 9,
+    "fatPercent": 31
   },
   {
     "energyMin": 2201,
@@ -984,10 +984,10 @@ export const nutritionData = [
     "proteinMin": 55,
     "proteinMax": 59,
     "kcalActual": 2300,
-    "proteinActual": "60.5",
-    "carbPercent": "57",
-    "proteinPercent": "10",
-    "fatPercent": "33"
+    "proteinActual": 60.5,
+    "carbPercent": 57,
+    "proteinPercent": 10,
+    "fatPercent": 33
   },
   {
     "energyMin": 2201,
@@ -995,10 +995,10 @@ export const nutritionData = [
     "proteinMin": 60,
     "proteinMax": 64,
     "kcalActual": 2300,
-    "proteinActual": "65",
-    "carbPercent": "60",
-    "proteinPercent": "11",
-    "fatPercent": "29"
+    "proteinActual": 65,
+    "carbPercent": 60,
+    "proteinPercent": 11,
+    "fatPercent": 29
   },
   {
     "energyMin": 2201,
@@ -1006,10 +1006,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 2300,
-    "proteinActual": "65",
-    "carbPercent": "60",
-    "proteinPercent": "11",
-    "fatPercent": "29"
+    "proteinActual": 65,
+    "carbPercent": 60,
+    "proteinPercent": 11,
+    "fatPercent": 29
   },
   {
     "energyMin": 2201,
@@ -1017,10 +1017,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 2300,
-    "proteinActual": "69.5",
-    "carbPercent": "56",
-    "proteinPercent": "12",
-    "fatPercent": "32"
+    "proteinActual": 69.5,
+    "carbPercent": 56,
+    "proteinPercent": 12,
+    "fatPercent": 32
   },
   {
     "energyMin": 2201,
@@ -1028,10 +1028,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 2300,
-    "proteinActual": "75",
-    "carbPercent": "57",
-    "proteinPercent": "13",
-    "fatPercent": "30"
+    "proteinActual": 75,
+    "carbPercent": 57,
+    "proteinPercent": 13,
+    "fatPercent": 30
   },
   {
     "energyMin": 2201,
@@ -1039,10 +1039,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 2300,
-    "proteinActual": "80",
-    "carbPercent": "55",
-    "proteinPercent": "14",
-    "fatPercent": "31"
+    "proteinActual": 80,
+    "carbPercent": 55,
+    "proteinPercent": 14,
+    "fatPercent": 31
   },
   {
     "energyMin": 2201,
@@ -1050,10 +1050,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 2300,
-    "proteinActual": "85",
-    "carbPercent": "52",
-    "proteinPercent": "15",
-    "fatPercent": "33"
+    "proteinActual": 85,
+    "carbPercent": 52,
+    "proteinPercent": 15,
+    "fatPercent": 33
   },
   {
     "energyMin": 2201,
@@ -1061,10 +1061,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 2300,
-    "proteinActual": "92",
-    "carbPercent": "51",
-    "proteinPercent": "16",
-    "fatPercent": "33"
+    "proteinActual": 92,
+    "carbPercent": 51,
+    "proteinPercent": 16,
+    "fatPercent": 33
   },
   {
     "energyMin": 2201,
@@ -1072,10 +1072,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 2300,
-    "proteinActual": "100",
-    "carbPercent": "54",
-    "proteinPercent": "17",
-    "fatPercent": "29"
+    "proteinActual": 100,
+    "carbPercent": 54,
+    "proteinPercent": 17,
+    "fatPercent": 29
   },
   {
     "energyMin": 2201,
@@ -1083,10 +1083,10 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 2300,
-    "proteinActual": "104",
-    "carbPercent": "54",
-    "proteinPercent": "18",
-    "fatPercent": "28"
+    "proteinActual": 104,
+    "carbPercent": 54,
+    "proteinPercent": 18,
+    "fatPercent": 28
   },
   {
     "energyMin": 2401,
@@ -1149,10 +1149,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 2500,
-    "proteinActual": "62.5",
-    "carbPercent": "55",
-    "proteinPercent": "10",
-    "fatPercent": "35"
+    "proteinActual": 62.5,
+    "carbPercent": 55,
+    "proteinPercent": 10,
+    "fatPercent": 35
   },
   {
     "energyMin": 2401,
@@ -1160,10 +1160,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 2500,
-    "proteinActual": "69.5",
-    "carbPercent": "55",
-    "proteinPercent": "11",
-    "fatPercent": "34"
+    "proteinActual": 69.5,
+    "carbPercent": 55,
+    "proteinPercent": 11,
+    "fatPercent": 34
   },
   {
     "energyMin": 2401,
@@ -1171,10 +1171,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 2500,
-    "proteinActual": "75.5",
-    "carbPercent": "55",
-    "proteinPercent": "12",
-    "fatPercent": "33"
+    "proteinActual": 75.5,
+    "carbPercent": 55,
+    "proteinPercent": 12,
+    "fatPercent": 33
   },
   {
     "energyMin": 2401,
@@ -1182,10 +1182,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 2500,
-    "proteinActual": "80.5",
-    "carbPercent": "57",
-    "proteinPercent": "13",
-    "fatPercent": "39"
+    "proteinActual": 80.5,
+    "carbPercent": 57,
+    "proteinPercent": 13,
+    "fatPercent": 39
   },
   {
     "energyMin": 2401,
@@ -1193,10 +1193,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 2500,
-    "proteinActual": "87.5",
-    "carbPercent": "56",
-    "proteinPercent": "14",
-    "fatPercent": "30"
+    "proteinActual": 87.5,
+    "carbPercent": 56,
+    "proteinPercent": 14,
+    "fatPercent": 30
   },
   {
     "energyMin": 2401,
@@ -1204,10 +1204,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 2500,
-    "proteinActual": "94.5",
-    "carbPercent": "55",
-    "proteinPercent": "15",
-    "fatPercent": "30"
+    "proteinActual": 94.5,
+    "carbPercent": 55,
+    "proteinPercent": 15,
+    "fatPercent": 30
   },
   {
     "energyMin": 2401,
@@ -1215,10 +1215,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 2500,
-    "proteinActual": "96.5",
-    "carbPercent": "54",
-    "proteinPercent": "16",
-    "fatPercent": "30"
+    "proteinActual": 96.5,
+    "carbPercent": 54,
+    "proteinPercent": 16,
+    "fatPercent": 30
   },
   {
     "energyMin": 2401,
@@ -1226,10 +1226,10 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 2500,
-    "proteinActual": "101.5",
-    "carbPercent": "54",
-    "proteinPercent": "17",
-    "fatPercent": "30"
+    "proteinActual": 101.5,
+    "carbPercent": 54,
+    "proteinPercent": 17,
+    "fatPercent": 30
   },
   {
     "energyMin": 2601,
@@ -1292,10 +1292,10 @@ export const nutritionData = [
     "proteinMin": 65,
     "proteinMax": 69,
     "kcalActual": 2700,
-    "proteinActual": "68.5",
-    "carbPercent": "65",
-    "proteinPercent": "10",
-    "fatPercent": "25"
+    "proteinActual": 68.5,
+    "carbPercent": 65,
+    "proteinPercent": 10,
+    "fatPercent": 25
   },
   {
     "energyMin": 2601,
@@ -1303,10 +1303,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 2700,
-    "proteinActual": "75.5",
-    "carbPercent": "64",
-    "proteinPercent": "11",
-    "fatPercent": "25"
+    "proteinActual": 75.5,
+    "carbPercent": 64,
+    "proteinPercent": 11,
+    "fatPercent": 25
   },
   {
     "energyMin": 2601,
@@ -1314,10 +1314,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 2700,
-    "proteinActual": "75.5",
-    "carbPercent": "64",
-    "proteinPercent": "11",
-    "fatPercent": "25"
+    "proteinActual": 75.5,
+    "carbPercent": 64,
+    "proteinPercent": 11,
+    "fatPercent": 25
   },
   {
     "energyMin": 2601,
@@ -1325,10 +1325,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 2700,
-    "proteinActual": "83",
-    "carbPercent": "63",
-    "proteinPercent": "12",
-    "fatPercent": "25"
+    "proteinActual": 83,
+    "carbPercent": 63,
+    "proteinPercent": 12,
+    "fatPercent": 25
   },
   {
     "energyMin": 2601,
@@ -1336,10 +1336,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 2700,
-    "proteinActual": "88",
-    "carbPercent": "62",
-    "proteinPercent": "13",
-    "fatPercent": "25"
+    "proteinActual": 88,
+    "carbPercent": 62,
+    "proteinPercent": 13,
+    "fatPercent": 25
   },
   {
     "energyMin": 2601,
@@ -1347,10 +1347,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 2700,
-    "proteinActual": "95",
-    "carbPercent": "61",
-    "proteinPercent": "14",
-    "fatPercent": "25"
+    "proteinActual": 95,
+    "carbPercent": 61,
+    "proteinPercent": 14,
+    "fatPercent": 25
   },
   {
     "energyMin": 2601,
@@ -1358,10 +1358,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 2700,
-    "proteinActual": "97",
-    "carbPercent": "61",
-    "proteinPercent": "14",
-    "fatPercent": "25"
+    "proteinActual": 97,
+    "carbPercent": 61,
+    "proteinPercent": 14,
+    "fatPercent": 25
   },
   {
     "energyMin": 2601,
@@ -1369,10 +1369,10 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 2700,
-    "proteinActual": "103.5",
-    "carbPercent": "60",
-    "proteinPercent": "15",
-    "fatPercent": "25"
+    "proteinActual": 103.5,
+    "carbPercent": 60,
+    "proteinPercent": 15,
+    "fatPercent": 25
   },
   {
     "energyMin": 2801,
@@ -1446,10 +1446,10 @@ export const nutritionData = [
     "proteinMin": 70,
     "proteinMax": 74,
     "kcalActual": 2900,
-    "proteinActual": "74",
-    "carbPercent": "60",
-    "proteinPercent": "10",
-    "fatPercent": "30"
+    "proteinActual": 74,
+    "carbPercent": 60,
+    "proteinPercent": 10,
+    "fatPercent": 30
   },
   {
     "energyMin": 2801,
@@ -1457,10 +1457,10 @@ export const nutritionData = [
     "proteinMin": 75,
     "proteinMax": 79,
     "kcalActual": 2900,
-    "proteinActual": NaN,
-    "carbPercent": NaN,
-    "proteinPercent": NaN,
-    "fatPercent": NaN
+    "proteinActual": 77.5,
+    "carbPercent": 59,
+    "proteinPercent": 11,
+    "fatPercent": 30
   },
   {
     "energyMin": 2801,
@@ -1468,10 +1468,10 @@ export const nutritionData = [
     "proteinMin": 80,
     "proteinMax": 84,
     "kcalActual": 2900,
-    "proteinActual": "80",
-    "carbPercent": "59",
-    "proteinPercent": "11",
-    "fatPercent": "30"
+    "proteinActual": 80,
+    "carbPercent": 59,
+    "proteinPercent": 11,
+    "fatPercent": 30
   },
   {
     "energyMin": 2801,
@@ -1479,10 +1479,10 @@ export const nutritionData = [
     "proteinMin": 85,
     "proteinMax": 89,
     "kcalActual": 2900,
-    "proteinActual": "87",
-    "carbPercent": "58",
-    "proteinPercent": "12",
-    "fatPercent": "30"
+    "proteinActual": 87,
+    "carbPercent": 58,
+    "proteinPercent": 12,
+    "fatPercent": 30
   },
   {
     "energyMin": 2801,
@@ -1490,10 +1490,10 @@ export const nutritionData = [
     "proteinMin": 90,
     "proteinMax": 94,
     "kcalActual": 2900,
-    "proteinActual": "89.5",
-    "carbPercent": "57.5",
-    "proteinPercent": "12.5",
-    "fatPercent": "30"
+    "proteinActual": 89.5,
+    "carbPercent": 57.5,
+    "proteinPercent": 12.5,
+    "fatPercent": 30
   },
   {
     "energyMin": 2801,
@@ -1501,10 +1501,10 @@ export const nutritionData = [
     "proteinMin": 95,
     "proteinMax": 99,
     "kcalActual": 2900,
-    "proteinActual": "93",
-    "carbPercent": "57",
-    "proteinPercent": "13",
-    "fatPercent": "30"
+    "proteinActual": 93,
+    "carbPercent": 57,
+    "proteinPercent": 13,
+    "fatPercent": 30
   },
   {
     "energyMin": 2801,
@@ -1512,9 +1512,9 @@ export const nutritionData = [
     "proteinMin": 100,
     "proteinMax": 104,
     "kcalActual": 2900,
-    "proteinActual": "102.5",
-    "carbPercent": "56",
-    "proteinPercent": "14",
-    "fatPercent": "30"
+    "proteinActual": 102.5,
+    "carbPercent": 56,
+    "proteinPercent": 14,
+    "fatPercent": 30
   }
 ];
